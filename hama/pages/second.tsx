@@ -1,6 +1,6 @@
 import { Heading } from "@chakra-ui/react";
 
-import ImageCard from "../components/imagecard";
+import ImageCard from "../components/ImageCard";
 
 function HomePage() {
   return (
@@ -8,7 +8,7 @@ function HomePage() {
       <Heading>This is Second.</Heading>
       <ImageCard />
     </div>
-  )
+  );
 }
 
 export default HomePage;
