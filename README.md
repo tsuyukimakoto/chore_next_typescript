@@ -14,3 +14,14 @@ https://chakra-ui.com/docs/styled-system/style-props
 ## Components
 
 https://chakra-ui.com/docs/components
+
+## storybook
+
+storybookのinstall
+
+reactのプロジェクトフォルダで実行する
+
+```
+$ npx sb init
+```
+
