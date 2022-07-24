@@ -1,10 +1,9 @@
 import { Button } from "@chakra-ui/react";
 import useSWRConfig from "swr";
+import { datetimeUrl } from "../../constants/accessUrl";
 
 function MyCurrentDataUpdate() {
-  const { mutate } = useSWRConfig(
-    "https://qv9hzcvy8g.execute-api.ap-northeast-1.amazonaws.com/datetime"
-  );
+  const { mutate } = useSWRConfig(datetimeUrl);
 
   return (
     <Button
