@@ -25,3 +25,12 @@ reactのプロジェクトフォルダで実行する
 $ npx sb init
 ```
 
+## swr
+
+テストでアクセスする先
+
+- lambda/function.py を AWS Lambdaに環境変数 TZ=Asia/Tokyo などを設定する
+- httpのAPI Gatewayにlambdaを統合し、CORSの設定をする
+  - Access-Control-Allow-Origin: *
+  - Access-Control-Allow-Headers: content-type
+  - Access-Control-Allow-Methods: GET,POST,OPTIONS
