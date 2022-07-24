@@ -1,12 +1,9 @@
 import useSWR from "swr";
-import axios from "axios";
 
 import { datetimeUrl } from "../../constants/accessUrl";
 
-const fetcher = (url: string) => axios.get(url).then((res) => res.data);
-
 function MyCurrentData2() {
-  const { data, error } = useSWR(datetimeUrl, fetcher);
+  const { data, error } = useSWR(datetimeUrl);
 
   if (error) {
     console.log(error);
